@@ -12,3 +12,6 @@ const phrases = [
     'to the moon'
 ];
 
+startGame[0].addEventListener('click', () => {
+    overlay.style.display = 'none';
+});
