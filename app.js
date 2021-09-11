@@ -15,3 +15,10 @@ const phrases = [
 startGame[0].addEventListener('click', () => {
     overlay.style.display = 'none';
 });
+
+//Chooses a random phrase from the "phrases" array and splits that phrase into a new array of characters.
+function getRandomPhraseAsArray(array) {
+    const randomIndex = Math.floor(Math.random() * array.length);
+    const randomPhrase = array[randomIndex];
+    return randomPhrase.split('');
+};
