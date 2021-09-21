@@ -90,8 +90,8 @@ function checkWin() {
     if (missed >= 5) {
         overlay.style.display = 'flex';
         overlay.className = 'lose';
-        title.textContent = 'Game Over';
-        startGame.textContent = 'New Game';
+        title.textContent = "Game Over";
+        startGame.textContent = "New Game";
         resetGame();
     }
 };
@@ -101,7 +101,6 @@ function resetGame() {
     const newPhrase = getRandomPhraseAsArray(phrases);
     phrase.innerHTML = '';
     addPhraseToDisplay(newPhrase);
-    
     for (let i = 0; i < keyboard.length; i++ ) {
 		keyboard[i].disabled = false;
 		keyboard[i].classList.remove('chosen');
