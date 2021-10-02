@@ -1,2 +1,2 @@
-# treehouse-project5
+# treehouse-techdegree-project-05
  Word Guessing Game
