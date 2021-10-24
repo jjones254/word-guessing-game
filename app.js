@@ -69,7 +69,7 @@ function checkLetter(button) {
     let match = null
     for (i = 0; i < letters.length; i++) {
         if (letters[i].textContent.toUpperCase() === button.textContent.toUpperCase()) {
-            letters[i].className += 'show';
+            letters[i].className = 'letter show';
             match = button.textContent;
         }
     }
